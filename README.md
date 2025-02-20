@@ -45,3 +45,42 @@ Aura Fitness Gym Management System is a full-stack web application developed usi
 ```bash
 git clone https://github.com/your-username/aura-fitness-gym.git
 cd aura-fitness-gym
+
+Step 2: Create a .env File
+Inside the root directory, create a .env file and add the following environment variables:
+
+env
+Copy
+Edit
+NODE_ENV=development
+PORT=5000
+MONGO_URI=mongodb+srv://your_username:your_password@mern-auth.sxzsr.mongodb.net/?retryWrites=true&w=majority&appName=Mern-Auth
+JWT_SECRET=your_jwt_secret_key
+
+EMAIL=aurafitness00@gmail.com
+EMAIL_PASSWORD=your_email_app_password
+
+EMAIL_USER=aurafitness00@gmail.com
+EMAIL_PASS=your_email_app_password
+Replace the placeholders (your_username, your_password, your_jwt_secret_key, etc.) with actual values.
+
+Step 3: Install Dependencies
+Run the following command in the root directory to install all dependencies for both frontend and backend:
+
+bash
+Copy
+Edit
+npm install
+This will install dependencies for both the client and server.
+
+Step 4: Run the Project Concurrently
+The project is set up to run the frontend and backend concurrently using concurrently. Start the application with:
+
+bash
+Copy
+Edit
+npm run dev
+This will start:
+
+Backend server on http://localhost:5000
+Frontend application on http://localhost:3000
